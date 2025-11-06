@@ -48,8 +48,6 @@ Sistema avançado de autenticação que implementa defesa em camadas para proteg
 
 ## 🏗️ Arquitetura do Sistema
 
-```
-
 ┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
 │Frontend      │    │   Middleware     │    │   Backend       │
 ││    │                  │    │                 │
@@ -58,8 +56,6 @@ Sistema avançado de autenticação que implementa defesa em camadas para proteg
 │• Fingerprint   │    │ • Fingerprint    │    │ • Redis         │
 └─────────────────┘│ • Security Logs  │    │ • MySQL/PDO     │
 └──────────────────┘    └─────────────────┘
-
-```
 
 ---
 
@@ -233,16 +229,16 @@ Performance impact < 50ms Negligível
 Telas Principais
 
 1. Login Seguro
-   · Validação em tempo real
-   · Feedback visual de segurança
+   · Validação em tempo real<br>
+   · Feedback visual de segurança<br>
    · Proteção contra brute-force
 2. Dashboard de Segurança
-   · Status de proteção em tempo real
-   · Monitoramento de atividades
+   · Status de proteção em tempo real<br>
+   · Monitoramento de atividades<br>
    · Controles de acesso granular
 3. Logs de Auditoria
-   · Histórico completo de acesso
-   · Detecções de ameaças
+   · Histórico completo de acesso<br>
+   · Detecções de ameaças<br>
    · Exportação de relatórios
 
 🔧 API Reference
@@ -284,18 +280,18 @@ Authorization: Bearer {jwt_token}
 
 O sistema inclui procedimentos automáticos para:
 
-· Revogação imediata de tokens comprometidos
-· Bloqueio temporário de contas sob ataque
-· Notificação proativa para administradores
+· Revogação imediata de tokens comprometidos<br>
+· Bloqueio temporário de contas sob ataque<r>
+· Notificação proativa para administradores<br>
 · Backup de sessões para análise forense
 
 📈 Performance e Escalabilidade
 
 Otimizações Implementadas
 
-· Cache Redis para tokens e fingerprints
-· Compressão de payloads JWT
-· Lazy loading de componentes de segurança
+· Cache Redis para tokens e fingerprints<br>
+· Compressão de payloads JWT<br>
+· Lazy loading de componentes de segurança<br>
 · CDN ready para assets estáticos
 
 Benchmarks
@@ -309,24 +305,24 @@ Time per request: 4.076 [ms] (mean)
 
 🤝 Contribuindo
 
-1. Fork o projeto
-2. Crie uma branch para sua feature (git checkout -b feature/AmazingFeature)
-3. Commit suas mudanças (git commit -m 'Add some AmazingFeature')
-4. Push para a branch (git push origin feature/AmazingFeature)
+1. Fork o projeto<br>
+2. Crie uma branch para sua feature (git checkout -b feature/AmazingFeature)<br>
+3. Commit suas mudanças (git commit -m 'Add some AmazingFeature')<br>
+4. Push para a branch (git push origin feature/AmazingFeature)<br>
 5. Abra um Pull Request
 
 Padrões de Código
 
-· Siga PHP-FIG PSR standards
-· ESLint para JavaScript
-· PHPStan para análise estática
+· Siga PHP-FIG PSR standards<br>
+· ESLint para JavaScript<br>
+· PHPStan para análise estática<br>
 · Testes unitários para novas features
 
 📋 Roadmap
 
-· v1.1 - Integração com OAuth2 providers
-· v1.2 - Dashboard administrativo avançado
-· v1.3 - API GraphQL
+· v1.1 - Integração com OAuth2 providers<br>
+· v1.2 - Dashboard administrativo avançado<br>
+· v1.3 - API GraphQL<br>
 · v2.0 - Machine learning para detecção de anomalias
 
 🐛 Troubleshooting
@@ -339,16 +335,16 @@ Problemas Comuns
    sudo systemctl status redis-server
    ```
 2. Token inválido
-   · Verifique o JWT_SECRET no .env
+   · Verifique o JWT_SECRET no .env<br>
    · Confirme a hora do servidor
 3. Fingerprint mismatch
-   · Limpe cache do navegador
+   · Limpe cache do navegador<br>
    · Verifique headers HTTP
 
 🏆 Reconhecimentos
 
-· Inspirado nas melhores práticas OWASP
-· Baseado em princípios de Zero Trust Architecture
+· Inspirado nas melhores práticas OWASP<br>
+· Baseado em princípios de Zero Trust Architecture<br>
 · Desenvolvido com foco em PCI DSS e LGPD
 
 ---
