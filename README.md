@@ -53,22 +53,22 @@ Frontend (Cliente) → Middleware (Segurança) → Backend (API)
 COMPONENTES:
 
 FRONTEND:
-• JavaScript/TypeScript
-• Tailwind CSS
-• Fingerprint Generator
+• JavaScript/TypeScript<br>
+• Tailwind CSS<br>
+• Fingerprint Generator<br>
 • Interface Responsiva
 
 MIDDLEWARE:  
-• Validação JWT
-• Rate Limiting
-• Verificação Fingerprint
+• Validação JWT<br>
+• Rate Limiting<br>
+• Verificação Fingerprint<br>
 • Logs de Segurança
 
 BACKEND:
-• PHP 8.0+
-• API RESTful
-• Redis (Tokens)
-• MySQL (Dados)
+• PHP 8.0+<br>
+• API RESTful<br>
+• Redis (Tokens)<br>
+• MySQL (Dados)<br>
 • JWT Tokens
 
 ---
