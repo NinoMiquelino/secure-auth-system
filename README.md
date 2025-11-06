@@ -48,14 +48,28 @@ Sistema avançado de autenticação que implementa defesa em camadas para proteg
 
 ## 🏗️ Arquitetura do Sistema
 
-┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
-│   Frontend      │    │   Middleware     │    │   Backend       │
-│                 │    │                  │    │                 │
-│ • React/Vanilla │◄──►│ • Auth Validation│◄──►│ • PHP API       │
-│ • Tailwind CSS  │    │ • Rate Limiting  │    │ • JWT Tokens    │
-│ • Fingerprint   │    │ • Fingerprint    │    │ • Redis         │
-└─────────────────┘    │ • Security Logs  │    │ • MySQL/PDO     │
-                       └──────────────────┘    └─────────────────┘
+Frontend (Cliente) → Middleware (Segurança) → Backend (API)
+
+COMPONENTES:
+
+FRONTEND:
+• JavaScript/TypeScript
+• Tailwind CSS
+• Fingerprint Generator
+• Interface Responsiva
+
+MIDDLEWARE:  
+• Validação JWT
+• Rate Limiting
+• Verificação Fingerprint
+• Logs de Segurança
+
+BACKEND:
+• PHP 8.0+
+• API RESTful
+• Redis (Tokens)
+• MySQL (Dados)
+• JWT Tokens
 
 ---
 
